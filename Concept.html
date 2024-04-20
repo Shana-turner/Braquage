@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/4c0a1da7fd.js" crossorigin="anonymous"></script>
+	<title>Concept</title>
+</head>
+<body>
+	<nav class="navbar">
+		<a href="#" target="_blank" class="logo">Braquage</a>
+		<div class="navlinks">
+			<ul >
+				<li ><a href="header.html" >Home</a></li>
+				<li class="deroulant">
+					<a href="Magazine.html"  >Magazine</a>
+					<ul id="sous-menu">
+						<li><a href="">Baggy</a></li>
+						<li><a href="">Skirt</a></li>
+						<li><a href="">Sweat</a></li>
+						<li><a href="">Jacket</a></li>
+						<li><a href="">Dress</a></li>
+					</ul>
+				</li>
+				<li class="active"><a href="Concept.html" >Concept</a></li>
+				<li><a href="Contact.html" >Contact</a></li>
+			</ul>
+		</div>
+		<img src="image/menu.png" alt="menu" class="menu">
+	</nav>
+
+	<footer>
+		<div class="conteneurfoot">
+			<h2>Braquage Brussels</h2>
+			<p>Nos maitre mots sont couleur, oser et amusement.</p>
+			<div class="reseau">
+				<a href="https://www.instagram.com/braquage_brussels?igsh=cHd0bmNvZDV0aWhk&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://www.tiktok.com/@braquage_brussels?_t=8j6gp5CNgsz&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+				<a href="https://pin.it/5gj5vuzjG" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+				<a href="https://www.vinted.be/member/140442556-braquagebrussels" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+<script >
+	const menuBurger = document.querySelector(".menu")
+	const navLinks = document.querySelector(".navlinks")
+
+	menuBurger.addEventListener('click', ()=>{
+		navLinks.classList.toggle('mobile-menu')
+	})
+
+	window.addEventListener("scroll", function(){
+		var nav = document.querySelector("nav");
+		nav.classList.toggle("sticky", window.scrollY > 0);
+	})
+	
+</script>
+
+</html>

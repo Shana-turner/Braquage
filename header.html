@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/4c0a1da7fd.js" crossorigin="anonymous"></script>
+	<title>Home</title>
+</head>
+<body>
+	<nav class="navbar">
+		<a href="#" target="_blank" class="logo">Braquage</a>
+		<div class="navlinks">
+			<ul >
+				<li class="active"><a href="header.html" >Home</a></li>
+				<li class="deroulant">
+					<a href="Magazine.html"  >Magazine</a>
+					<ul id="sous-menu">
+						<li><a href="">Baggy</a></li>
+						<li><a href="">Skirt</a></li>
+						<li><a href="">Sweat</a></li>
+						<li><a href="">Jacket</a></li>
+						<li><a href="">Dress</a></li>
+					</ul>
+				</li>
+				<li><a href="Concept.html" >Concept</a></li>
+				<li><a href="Contact.html" >Contact</a></li>
+			</ul>
+		</div>
+		<img src="image/menu.png" alt="menu" class="menu">
+	</nav>
+	<header class="header-home">	
+		<h1>By Shana Biot</h1>
+	</header>
+	<main>
+		<div class="conteneur1">
+			<div class="box photo1"><img src="image/cheveux.jpg" alt="jeans" id="photo1"></div>
+			<div class="box legende1">Notre meilleur baggy</div>
+			<div class="box textegras">Baggy Kaprice</div>
+			<div class="box chiffre">25</div>
+			<div class="box photo2"><img src="image/cravate.jpg" alt="jeans" id="photo2"></div>
+			<div class="box textelong">Notre but est de faire une collection de pièce unique. Nous avons donc produit une collection limitée à 25 baggy. </div>
+			<div class="box legende3">Une idée de look</div>
+			<div class="box photo3"><img src="image/resto.jpg" alt="jeans" id="photo3"></div>
+			<div class="box texte">Il est à 80€</div>
+			<div class="box veste"><img src="image/baggy.png" alt="jeans" id="veste"></div>
+			<div class="box bouton"><button type="button" id="bouton">Voir plus</button></div>
+			<div class="box photo4"><img src="image/chambre.jpg" alt="jeans" id="photo4"></div>
+			<div class="box legende4">Alors, vous êtes convaincu </div>
+
+		</div>
+		<div class="conteneur2">
+			<div class="collection1">
+				<h2><a href="#" target="_blank">Braquage Bruxelles</a></h2>
+				<button type="button">Voir</button>
+				
+			</div>
+			<div class="collection2">
+			
+				<h2><a href="#" target="_blank">Braquage Mons</a></h2>
+				<button type="button">Voir</button>
+			</div>
+			
+		</div>
+	</main>
+	<footer>
+		<div class="conteneurfoot">
+			<h2>Braquage Brussels</h2>
+			<p>Nos maitre mots sont couleur, oser et amusement.</p>
+			<div class="reseau">
+				<a href="https://www.instagram.com/braquage_brussels?igsh=cHd0bmNvZDV0aWhk&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://www.tiktok.com/@braquage_brussels?_t=8j6gp5CNgsz&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+				<a href="https://pin.it/5gj5vuzjG" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+				<a href="https://www.vinted.be/member/140442556-braquagebrussels" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+<script >
+	const menuBurger = document.querySelector(".menu")
+	const navLinks = document.querySelector(".navlinks")
+
+	menuBurger.addEventListener('click', ()=>{
+		navLinks.classList.toggle('mobile-menu')
+	})
+
+	window.addEventListener("scroll", function(){
+		var nav = document.querySelector("nav");
+		nav.classList.toggle("sticky", window.scrollY > 0);
+	})
+
+	
+</script>
+</html>
